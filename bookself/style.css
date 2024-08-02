@@ -50,6 +50,7 @@ input {
   height: 2rem;
   background-color: rgb(249, 249, 248);
   border-radius: 5px;
+  margin-top: 5px;
 }
 
 .add:hover {
@@ -62,6 +63,7 @@ input {
 
 .subgrid {
   display: flex;
+  flex: 0 0 auto;
   gap: 5px;
   background-color: darkgrey;
   flex-direction: column;
@@ -70,4 +72,5 @@ input {
   font-size: larger;
   border: 1px solid black;
   border-radius: 5px;
+  box-sizing: border-box;
 }/*# sourceMappingURL=style.css.map */

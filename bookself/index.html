@@ -21,39 +21,39 @@
         <form action="" id="shelf">
           <label for="Bookname">Book name</label>
           <br />
-          <input type="text" name="Bookname" id="" />
+          <input type="text" name="Bookname" id="title" required />
           <br />
           <label for="AuthorName">Author Name</label>
           <br />
-          <input type="text" name="AuthorName" />
+          <input type="text" name="AuthorName" id="author" required />
           <br />
           <label for="pages">Total No of pages</label>
           <br />
-          <input type="number" name="pages" id="" />
+          <input type="number" name="pages" id="nums" required />
           <br />
           <label for="Read">Read ? </label>
           <br />
-          <select name="Read" id="">
+          <select name="Read" id="read" required>
             <option value="true">Yes</option>
             <option value="false">No</option>
           </select>
           <br />
-          <button class="add" id="add">Add to favourite</button>
+          <button class="add" id="add">Add to favourite!!</button>
         </form>
       </div>
-      <div class="maingrid">
+      <div class="maingrid" id="maingrid">
         <div class="subgrid">
-          <h3>Two states</h3>
+          <h3 id="bookname">Two states</h3>
           <h4>Chetan Bhagat</h4>
-          <p>pages <span>25</span></p>
-          <p>Read ? <span>yes</span></p>
-          <button id="rmv" class="rmv">Remove ?</button>
+          <p>pages : 25</p>
+          <p>Read ? yes</p>
+          <button id="rmv" class="rmv">Remove!!</button>
         </div>
       </div>
     </div>
     <footer class="footer">
       <h2>Reading is goor for you!!</h2>
     </footer>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="/main.js" defer></script>
   </body>
 </html>
