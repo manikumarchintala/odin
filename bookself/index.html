@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books libriary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sankofa+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Youre favourite Book app</h1>
+    </header>
+    <div id="app" class="app">
+      <div class="sidegrid">
+        <form action="" id="shelf">
+          <label for="Bookname">Book name</label>
+          <br />
+          <input type="text" name="Bookname" id="" />
+          <br />
+          <label for="AuthorName">Author Name</label>
+          <br />
+          <input type="text" name="AuthorName" />
+          <br />
+          <label for="pages">Total No of pages</label>
+          <br />
+          <input type="number" name="pages" id="" />
+          <br />
+          <label for="Read">Read ? </label>
+          <br />
+          <select name="Read" id="">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+          </select>
+          <br />
+          <button class="add" id="add">Add to favourite</button>
+        </form>
+      </div>
+      <div class="maingrid">
+        <div class="subgrid">
+          <h3>Two states</h3>
+          <h4>Chetan Bhagat</h4>
+          <p>pages <span>25</span></p>
+          <p>Read ? <span>yes</span></p>
+          <button id="rmv" class="rmv">Remove ?</button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <h2>Reading is goor for you!!</h2>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

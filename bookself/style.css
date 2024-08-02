@@ -1,0 +1,73 @@
+:root {
+  --bgcolor: cornflowerblue;
+  --primcolor:black;
+}
+
+body, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  font-family: "Sankofa Display", sans-serif;
+}
+
+.header, .footer {
+  background-color: var(--bgcolor);
+  color: var(--primcolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1px;
+}
+
+input {
+  height: 2rem;
+  width: 100%;
+}
+
+.sidegrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid gray;
+  padding: 20px;
+}
+
+.maingrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+.rmv, .add {
+  height: 2rem;
+  background-color: rgb(249, 249, 248);
+  border-radius: 5px;
+}
+
+.add:hover {
+  background-color: chartreuse;
+}
+
+.rmv:hover {
+  background-color: red;
+}
+
+.subgrid {
+  display: flex;
+  gap: 5px;
+  background-color: darkgrey;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  border: 1px solid black;
+  border-radius: 5px;
+}/*# sourceMappingURL=style.css.map */
