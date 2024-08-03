@@ -1,1 +1,63 @@
-/*# sourceMappingURL=style.css.map */
+:root {
+  --bgm: rgb(207, 203, 203);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bgm);
+  height: 100vh;
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cornflowerblue;
+}
+
+button {
+  height: 2.3rem;
+}
+
+.Player {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: lightblue;
+  border: 1px solid black;
+}
+
+.left, .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1.2fr 2fr 1.2fr;
+}
+
+.middle {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+  padding: 115px 145px;
+  background-color: aliceblue;
+}
+
+.cell {
+  border: 1px solid black;
+  font-size: 35px;
+  font-weight: bolder;
+  cursor: pointer;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */

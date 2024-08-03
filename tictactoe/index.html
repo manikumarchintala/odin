@@ -1,13 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Tic toc Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Sankofa+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <header class="header">
+      <h1>Tic-toc-toe !</h1>
+    </header>
+    <div class="Player">
+      <button>New Game ?</button>
+      <p>Player 1 turn use this "X"</p>
+      <button>Reset scores!</button>
+    </div>
+    <div id="app" class="app">
+      <div class="left">
+        <h3>Player 1 Name</h3>
+        <div>Score Board</div>
+      </div>
+      <div id="middle" class="middle">
+        <div class="cell" type="button" value="1"></div>
+        <div class="cell" type="button" value="2"></div>
+        <div class="cell" type="button" value="3"></div>
+        <div class="cell" type="button" value="4"></div>
+        <div class="cell" type="button" value="5"></div>
+        <div class="cell" type="button" value="6"></div>
+        <div class="cell" type="button" value="7"></div>
+        <div class="cell" type="button" value="8"></div>
+        <div class="cell" type="button" value="9"></div>
+      </div>
+      <div class="right">
+        <h3>player 2 Name</h3>
+        <div>Score Board</div>
+      </div>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
