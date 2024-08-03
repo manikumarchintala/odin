@@ -1,13 +1,114 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Restaurant App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <header class="head" id="head">
+      <button id="home_button">Home</button>
+      <button id="menu_button">Menu</button>
+      <button id="about_button">About</button>
+    </header>
+    <div id="app" class="app">
+      <div class="left"></div>
+      <div class="content">
+        <div class="Home" id="Home">
+          <figure>
+            <h1>Desi Kitchen</h1>
+            <img
+              src="https://i.pinimg.com/564x/70/2d/28/702d281854280e8b50a9dd7033b19eab.jpg"
+              alt="Hotel"
+            />
+          </figure>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quas
+            consectetur sint veniam autem debitis alias accusantium! Libero
+            nobis consequatur fuga recusandae dicta, inventore itaque, porro
+            aliquam placeat tempora vel. Neque laudantium, ipsa veniam unde quis
+            perspiciatis eius voluptates debitis quos, dicta facere possimus
+            minus eveniet nulla sequi? Quaerat, porro cupiditate? Iste
+            repellendus blanditiis dignissimos praesentium, reprehenderit libero
+            vero ipsam. vitae!
+          </p>
+        </div>
+        <div class="Menu" id="Menu">
+          <div class="card">
+            <img
+              src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg"
+              alt="oats"
+            />
+            <div>
+              <h2>Cheese Burger</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
+                saepe a nobis enim. Incidunt ex reprehenderit ratione ad quae
+                unde, minima numquam alias excepturi beatae consectetur optio
+                modi iusto corrupti!
+              </p>
+              <p>15$</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://www.foodiesfeed.com/wp-content/uploads/2023/08/crispy-spicy-chicken-wings.jpg"
+              alt="wings"
+            />
+            <div>
+              <h2>Spicy Wings</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
+                saepe a nobis enim. Incidunt ex reprehenderit ratione ad quae
+                unde, minima numquam alias excepturi beatae consectetur optio
+                modi iusto corrupti!
+              </p>
+              <p>15$</p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/pouring-honey-on-pancakes.jpg"
+              alt="PanCakes"
+            />
+            <div>
+              <h2>Honey PanCakes</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
+                saepe a nobis enim. Incidunt ex reprehenderit ratione ad quae
+                unde, minima numquam alias excepturi beatae consectetur optio
+                modi iusto corrupti!
+              </p>
+              <p>15$</p>
+            </div>
+          </div>
+        </div>
+        <div class="About" id="About">
+          <figure>
+            <h1>Most Liked food</h1>
+            <img
+              src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/ee/ab/bc/paneer-veggie-platter.jpg?w=600&h=400&s=1"
+              alt=""
+            />
+          </figure>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam
+            praesentium vero itaque, obcaecati placeat quia veritatis unde
+            ipsum. Sunt assumenda illo dolores consequuntur deserunt distinctio
+            quas vitae nulla! Sapiente, expedita.
+          </p>
+        </div>
+      </div>
+      <div class="right"></div>
+    </div>
+    <script type="module" src="/main.js" defer></script>
   </body>
 </html>

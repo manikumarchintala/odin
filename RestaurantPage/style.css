@@ -1,0 +1,97 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Dancing Script", cursive;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  height: 2.5rem;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+button:hover {
+  background-color: black;
+  color: aliceblue;
+}
+
+.head {
+  position: fixed;
+  width: 100vw;
+  background-color: cornflowerblue;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 0.5fr 4fr 0.5fr;
+  background-color: cornflowerblue;
+}
+
+.content, figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  padding: 50px 20px;
+  font-size: 25px;
+}
+
+figure {
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  border: 1px solid gray;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.Home {
+  display: none;
+}
+
+.--visible {
+  display: block;
+}
+
+.Menu {
+  display: none;
+  padding: 50px 5px;
+  gap: 10px;
+}
+
+.--visible {
+  display: block;
+}
+
+.About {
+  display: none;
+}
+
+.--visible {
+  display: block;
+}/*# sourceMappingURL=style.css.map */
