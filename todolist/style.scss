@@ -1,0 +1,71 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Caveat", cursive;
+}
+button{
+    width: 5rem;
+    height: 2.5rem;
+    background-color: wheat;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+.plus{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50px;
+    background-color: wheat;
+    border: 1px solid gray;
+}
+button:hover, .plus:hover{
+    background-color: gray;
+    color: aliceblue;
+    cursor: pointer;
+}
+.left{
+    background-color: cornflowerblue;
+    padding: 5px;
+}
+.top{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.date{
+    margin: 10px 5px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 800;
+    cursor: pointer;
+}
+.dayadd{
+    margin-left: 10px;
+    width: 6rem;
+    height: 2.5rem;
+}
+.right{
+    border: 1px solid gray;
+    display: grid;
+    padding: 10px;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap:10px;
+}
+.task{
+    padding: 10px;
+    border: 1px solid gray;
+     display: flex;
+     flex-direction: column;
+     justify-content:space-around;
+     align-items: center;
+     flex-wrap: wrap;
+     border-radius: 20px;
+}

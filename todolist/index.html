@@ -1,13 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>To Do List!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div class="main">
+        <div class="left">
+          <div class="top">
+            <h1>List</h1>
+            <button class="plus">+</button>
+          </div>
+          <div class="bottom">
+            <div class="date">
+              <p>08/05/2024</p>
+            </div>
+            <button class="dayadd">Add Day</button>
+          </div>
+        </div>
+        <dialog open>
+          <form action="">
+            <label for="title">Title</label>
+            <br />
+            <input type="text" name="title" />
+            <br />
+            <label>Descreption</label>
+            <br />
+            <input type="text" name="Descreption" />
+            <br />
+            <label for="Priority">Priority</label>
+            <br />
+            <select name="Priority" id="">
+              <option value="">High</option>
+              <option value="">Medium</option>
+              <option value="">Low</option>
+            </select>
+            <br />
+            <br />
+            <button>Add !</button>
+          </form>
+        </dialog>
+        <div class="right">
+          <div id="task" class="task">
+            <h2>Task</h2>
+            <h3>Mani</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim rem
+              culpa nihil nulla provident hic ipsa fugiat, esse accusantium
+              deleniti mollitia amet eaque possimus dignissimos est tenetur
+              debitis doloremque eos!
+            </p>
+            <p>High</p>
+            <button>Remove?</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

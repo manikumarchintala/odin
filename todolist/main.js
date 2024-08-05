@@ -68,6 +68,11 @@ let val = new Datewise();
 val.addday("Monday");
 val.addday("Tuesday");
 val.addday("Wednesday");
+val.addday("Thursday");
+val.addday("Friday");
+val.addday("Saturday");
+val.addday("Sunday");
+
 val.addDataToList("Monday", 1, "mani", "swimming", "High");
 val.addDataToList("Monday", 2, "mani", "swimming", "High");
 val.addDataToList("Wednesday", 3, "mani", "swimming", "High");
