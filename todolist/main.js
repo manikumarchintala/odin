@@ -77,3 +77,18 @@ val.addDataToList("Monday", 1, "mani", "swimming", "High");
 val.addDataToList("Monday", 2, "mani", "swimming", "High");
 val.addDataToList("Wednesday", 3, "mani", "swimming", "High");
 console.log(val.toPlainObject());
+
+document.addEventListener("DOMContentLoaded", () => {
+  const dialog = document.querySelector("dialog");
+  const overlay = document.getElementById("overlay");
+  const plusButton = document.querySelector(".plus");
+  plusButton.addEventListener("click", () => {
+    dialog.showModal();
+  });
+  dialog.addEventListener("close", () => {
+    overlay.style.display = "none";
+  });
+  dialog.addEventListener("show", () => {
+    overlay.style.display = "block";
+  });
+});

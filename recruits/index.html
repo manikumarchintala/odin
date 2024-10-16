@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./main.js" type="module" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="header--flex">
+        <div>
+          <img src="./images/TestLogo.svg" alt="Techcarelogo" />
+        </div>
+        <ul class="header--flex__nav">
+          <li>
+            <img
+              src="./images/home_FILL0_wght300_GRAD0_opsz24.svg"
+              alt="homelogo"
+            />
+            Overview
+          </li>
+          <li>
+            <img
+              src="./images/group_FILL0_wght300_GRAD0_opsz24.svg"
+              alt="group"
+            />
+            Patients
+          </li>
+          <li>
+            <img
+              src="./images/group_FILL0_wght300_GRAD0_opsz24.svg"
+              alt="scheduletoday"
+            />
+            Schedule
+          </li>
+          <li>
+            <img
+              src="./images/chat_bubble_FILL0_wght300_GRAD0_opsz24.svg"
+              alt="messageicon"
+            />
+            Message
+          </li>
+          <li>
+            <img
+              src="./images/credit_card_FILL0_wght300_GRAD0_opsz24.svg"
+              alt="payments"
+            />
+            Transactions
+          </li>
+        </ul>
+        <div class="header--flex__login">
+          <img
+            src="./images/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc@2x.png"
+            height="44"
+            width="44"
+            alt="senior doctor"
+          />
+          <div class="header--flex__logintext">
+            <h6>Dr.Hose Simmions</h6>
+            <p>GeneralPractioner</p>
+          </div>
+          <img src="./images/settings_FILL0_wght300_GRAD0_opsz24.svg" alt="" />
+          <img src="./images/more_vert_FILL0_wght300_GRAD0_opsz24.svg" alt="" />
+        </div>
+      </nav>
+    </header>
+    <main class="maincontent">
+      <div class="maincontent--patientlist">
+        <div class="maincontent--patientlist__header">
+          <h1>Patients</h1>
+          <img
+            src="./images/search_FILL0_wght300_GRAD0_opsz24.svg"
+            alt="finder"
+          />
+        </div>
+        <div
+          class="maincontent--patientlist__listholder"
+          id="patientlistholder"
+        >
+          <!-- <div class="maincontent--patientlist__list">
+            <img src="./images/Layer 8@2x.png" width="48" height="48" alt="">
+                <div class="maincontent--patientlist__listtext" >
+                    <h5>Manisha</h3>
+                    <p>Female,28</p> 
+                </div>
+             <img src="./images/more_horiz_FILL0_wght300_GRAD0_opsz24.svg" alt="">
+          </div> -->
+        </div>
+      </div>
+      <div class="middleholder">
+        <div class="middleholder--graphcharts">
+          <h4>Diagnosis History</h4>
+          <canvas id="bloodPressureChart" width="50" height="14" ></canvas>
+          <div class="middleholder--graphcharts__data" ></div>
+        </div>
+        <div class="middleholder--graphcharts__list">
+          <div class="middleholder--graphcharts__listheader" >
+            <h4>Diagnostic List</h1>
+                <ul>
+                    <li>Problem/Diagnosis</li>
+                    <li>Descreption</li>
+                    <li>Status</li>
+                </ul>
+          </div>
+          <div class="middleholder--graphcharts__listdetails" >
+            <!-- <ul>
+                <l1></l1>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+      <div class="lastholder">
+        <div class="lastholder--profile" id="lastholder--profile">
+            <div class="lastholder--profile__imgname" id="profiledetails" ></div>
+            <div class="lastholder--profile__props" ></div>
+        </div>
+        <div class="lastholder--labresults">
+            <h4>Lab Results</h4>
+          <div class="lastholder--labresults__holder" id="lastholder--labresults__holder" >
+            <!-- <div class="lastholder--labresults__holderdetails" id="lastholder--labresults__holderdetails" >
+                   <ul><p>Hello</p>
+                    <img src="./images/download_FILL0_wght300_GRAD0_opsz24 (1).svg" alt="">
+                    </ul> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
